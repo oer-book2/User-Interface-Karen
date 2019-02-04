@@ -1,21 +1,20 @@
-class Panel {
-    constructor(panel) {
+class Subject {
+    constructor(subject) {
   
-      this.panelButtons = panel.querySelector('.panel-buttons');
-      this.panelBtnOpen = panel.querySelector('.panel-btn-open');
-      this.panelBtnClose = panel.querySelector('.panel-btn-close');
-      this.panelContent = panel.querySelector('.panel-content');
-      this.panelButtons.addEventListener('click', () => this.togglePanel());
+      this.subjectButtons = subject.querySelector('.subject-buttons');
+      this.subjectBtnOpen = subject.querySelector('.subject-btn-open');
+      this.subjectBtnClose = subject.querySelector('.subject-btn-close');
+      this.subjectContent = subject.querySelector('.subject-content');
+      this.subjectButtons.addEventListener('click', () => this.toggleSubject());
       
     }
-    togglePanel() {
-      console.log(this.panelBtnOpen);
-      this.panelBtnOpen.classList.toggle('hide-btn');
-      this.panelBtnClose.classList.toggle('hide-btn');
-      this.panelContent.classList.toggle('toggle-on');
+    toggleSubject() {
+      this.subjectBtnOpen.classList.toggle('hide-btn');
+      this.subjectBtnClose.classList.toggle('hide-btn');
+      this.subjectContent.classList.toggle('toggle-on');
     }
   }
   
-  const panels = document.querySelectorAll('.panel');
-  panels.forEach( panel => new Panel(panel));
+  const subjects = document.querySelectorAll('.subject');
+  subjects.forEach( subject => new Subject(subject));
   
