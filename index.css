@@ -69,18 +69,37 @@ table {
   }
   h1 {
       width: 50%;
-      font-size: 1.7rem;
+      font-size: 1.7rem;  
   }
+  @media(min-width: 1000px) {
+      h1{
+          font-size: 3rem;
+      }
+  }
+
+  @media(min-width: 1000px) {
+    h3{
+        font-size: 2rem;
+    }
+}
+
+
   nav a{
       display: inline-flex;
       font-family: 'Basic';
       font-size: .75rem;
       color:navy;
+      text-decoration: none;
       padding: 5px;
   }
   nav a:hover{
-      color: red;
-      font-size: .75rem;
+      font-weight: bold;
+      border-bottom: 1px solid navy;
+  }
+  @media(min-width: 1000px) {
+      nav a {
+        font-size: 1rem;  
+      }
   }
   
   p {
@@ -91,11 +110,17 @@ table {
   }
   
   img {
-      display: inline-block;
-      align-items: space-between;
+    display: flex;
     width: 120px; 
     height: 120px;
     margin-left: 25px;
+  }
+
+  @media(min-width: 1000px) {
+      img {
+          width: 200px;
+          height: 200px;
+      }
   }
   
   .topics{
@@ -107,9 +132,12 @@ table {
 .subject {
     display: flex;
     justify-content: space-between;
-    margin-left: 10px;
-    padding: 15px;
+    margin: 10px 30px;
     border-bottom: 1px dashed navy;
+}
+.subject:hover {
+    background:lightgray;
+    cursor: pointer;
 }
 
 
