@@ -1,7 +1,8 @@
 class Subject {
     constructor(subject) {
-  
-      this.subjectButtons = subject.querySelector('.subject-buttons');
+
+      this.subject = subject;
+      this.subjectButtons = subject.querySelector('.subject-button');
       this.subjectBtnOpen = subject.querySelector('.subject-btn-open');
       this.subjectBtnClose = subject.querySelector('.subject-btn-close');
       this.subjectContent = subject.querySelector('.subject-content');
