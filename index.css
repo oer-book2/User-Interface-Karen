@@ -132,8 +132,8 @@ table {
 .subject {
     display: flex;
     justify-content: space-between;
-    margin: 10px 30px;
-    border-bottom: 1px dashed navy;
+    margin: 20px 30px;
+    border: 1px dashed navy;
 }
 .subject:hover {
     background:lightgray;
@@ -154,7 +154,10 @@ table {
       margin-top: 50px;
       color:navy;
   }
-
+  footer {
+      display: flex;
+      justify-content: center;
+  }
   
  
 
