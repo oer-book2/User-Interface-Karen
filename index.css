@@ -50,7 +50,6 @@ table {
   .container {
     width: 100%;
     margin: 0 auto;
-    background: lightblue;
   }
   @media(min-width: 300px) {
       .container {
@@ -65,7 +64,7 @@ table {
   
   h1,h2, h3{
      font-family: 'Averia Libre';
-     color: navy;
+    
   }
   h1 {
       width: 50%;
@@ -88,13 +87,12 @@ table {
       display: inline-flex;
       font-family: 'Basic';
       font-size: .75rem;
-      color:navy;
       text-decoration: none;
       padding: 5px;
   }
   nav a:hover{
       font-weight: bold;
-      border-bottom: 1px solid navy;
+      border-bottom: 1px solid lightgray;
   }
   @media(min-width: 1000px) {
       nav a {
@@ -106,7 +104,7 @@ table {
     margin: 20px 20px;
     line-height: 1.25;
     font-family: 'Basic';
-    color:navy;
+    
   }
   
   img {
@@ -127,13 +125,13 @@ table {
     display: flex;
     justify-content:center;
     padding: 25px;
-    border: 1px solid navy;
+    border: 1px solid black
   }
 .subject {
     display: flex;
     justify-content: space-between;
     margin: 20px 30px;
-    border: 1px dashed navy;
+    border: 1px dashed black
 }
 .subject:hover {
     background:lightgray;
@@ -147,12 +145,12 @@ table {
       align-items: center;
       width: 100%;
       padding: 20px 15px;
-      background: lightslategray; 
-      border-bottom: 1px dashed navy;
+      background: lightgray; 
+      border-bottom: 1px dashed black
   }
   .topics{
       margin-top: 50px;
-      color:navy;
+     
   }
   footer {
       display: flex;
