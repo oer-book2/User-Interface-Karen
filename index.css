@@ -59,31 +59,54 @@ table {
   }
   @media(min-width: 1000px) {
       .container {
-          max-width: 800px
+          max-width: 1000px
       }
   }
   
   h1,h2, h3{
      font-family: 'Averia Libre';
   }
-  
+  h1 {
+      width: 50%;
+      font-size: 1.7rem;
+      border: 2px solid yellow;
+  }
+  nav a{
+      display: inline-flex;
+      font-family: 'Basic';
+      font-size: .65rem;
+      color:black;
+      padding: 5px;
+  }
+  nav a:hover{
+      color: red;
+      font-size: .75rem;
+  }
   
   p {
     margin: 20px 20px;
     line-height: 1.25;
+    font-family: 'Basic';
   }
   
   img {
-    width: 150px; 
-    height: 150px;
+      display: inline-block;
+      align-items: space-between;
+    width: 120px; 
+    height: 120px;
     margin-left: 25px;
   }
   
   .topics{
+    display: flex;
+    justify-content:center;
     padding: 25px;
     border: 1px solid magenta;
   }
 .subject {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
     border: 2px dashed green;
 }
 
@@ -93,7 +116,7 @@ table {
       justify-content: space-between;
       align-items: center;
       width: 100%;
-      padding: 30px 0;
+      padding: 20px 15px;
       background: lightslategray; 
       border-bottom: 1px dashed black;
   }
