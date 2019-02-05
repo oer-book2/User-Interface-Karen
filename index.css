@@ -65,17 +65,17 @@ table {
   
   h1,h2, h3{
      font-family: 'Averia Libre';
+     color: navy;
   }
   h1 {
       width: 50%;
       font-size: 1.7rem;
-      border: 2px solid yellow;
   }
   nav a{
       display: inline-flex;
       font-family: 'Basic';
-      font-size: .65rem;
-      color:black;
+      font-size: .75rem;
+      color:navy;
       padding: 5px;
   }
   nav a:hover{
@@ -87,6 +87,7 @@ table {
     margin: 20px 20px;
     line-height: 1.25;
     font-family: 'Basic';
+    color:navy;
   }
   
   img {
@@ -101,13 +102,14 @@ table {
     display: flex;
     justify-content:center;
     padding: 25px;
-    border: 1px solid magenta;
+    border: 1px solid navy;
   }
 .subject {
     display: flex;
     justify-content: space-between;
     margin-left: 10px;
-    border: 2px dashed green;
+    padding: 15px;
+    border-bottom: 1px dashed navy;
 }
 
 
@@ -118,12 +120,14 @@ table {
       width: 100%;
       padding: 20px 15px;
       background: lightslategray; 
-      border-bottom: 1px dashed black;
+      border-bottom: 1px dashed navy;
   }
   .topics{
       margin-top: 50px;
+      color:navy;
   }
 
+  
  
 
   
