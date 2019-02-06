@@ -1,18 +1,29 @@
+class SubjectContent {
+  constructor(subElement) {
+    this.subElement = subElement;
+  }
+  toggleContent() {
+    let content=document.querySelectorAll('.subjectContent');
+    Array.from(content).forEach(bar => bar.classList.remove('display'));
+    this.subElement.classList.add('display');
+
+  }
+}
+
 class SubjectBar {
-  constructor(subjectBar) {
-    this.subjectBar = subjectBar.querySelector('.subjectBar');
-    subjectBar.addEventListener('click', () => console.log('This works'))
+  constructor(element) {
+    this.element=element;
+    this.tab = document.querySelector(`.subjectContent[data-tab='${this.element.dataset.tab}']`)
+    this.text = new SubjectContent(this.tab);
+    this.element.addEventListener('click',()=> this.toggleContent())
   }
 
   toggleContent() {
-    if(subjectContent.style.display==='none'){
-    subjectContent.style.display = 'block';
-    } else {
-      subjectContent.style.display = 'none'
-    }
+    this.text.toggleContent();
   }
- }
+    
+}
 
 let subjectBars = document.querySelectorAll('.subjectBar');
 // console.log(subjectBars);
-subjectBars.forEach(subjectBar => new SubjectBar(subjectBar));
+subjectBars.forEach(element => new SubjectBar(element));
