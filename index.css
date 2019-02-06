@@ -73,8 +73,7 @@ table {
       }
   }
       
-
-  
+ 
   h1,h2, h3{
      font-family: 'Averia Libre';
     
@@ -128,16 +127,16 @@ table {
   
   img {
     display: flex;
-    width: 150px; 
-    height: 120px;
+    width: 170px; 
+    height: 150px;
     margin-left: 25px;
   }
 
 
   @media(min-width: 1000px) {
       img {
-          width: 250px;
-          height: 210px;
+          width: 300px;
+          height: 250px;
       }
   }
   
@@ -161,19 +160,20 @@ table {
     cursor: pointer;
 }
 
-.subject-bar {
+.subjectBar {
     display:flex;
-    justify-content: center;
+    justify-content: space-around;
+    margin: 15px;
   }
 
-  .subject-content {
+  .subjectContent {
       display: none;
   }
 
 
   header {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: center;
       width: 100%;
       padding: 20px 15px;

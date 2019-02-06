@@ -1,10 +1,18 @@
+class SubjectBar {
+  constructor(subjectBar) {
+    this.subjectBar = subjectBar.querySelector('.subjectBar');
+    subjectBar.addEventListener('click', () => console.log('This works'))
+  }
 
+  toggleContent() {
+    if(subjectContent.style.display==='none'){
+    subjectContent.style.display = 'block';
+    } else {
+      subjectContent.style.display = 'none'
+    }
+  }
+ }
 
-
-
-const subjects = document.querySelectorAll('.subject');
-console.log(subjects)
-
-subjects.forEach( subject => new Subject(subject));
-
-
+let subjectBars = document.querySelectorAll('.subjectBar');
+// console.log(subjectBars);
+subjectBars.forEach(subjectBar => new SubjectBar(subjectBar));
