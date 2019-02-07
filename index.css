@@ -50,6 +50,7 @@ table {
   .container {
     width: 100%;
     margin: 0 auto;
+    border: 1px solid lightgray;
   }
   @media(min-width: 250px) {
       .container {
@@ -75,17 +76,17 @@ table {
       
  
   h1,h2, h3{
-     font-family: 'Averia Libre';
+     font-family: 'Aclonica';
     
   }
   h1 {
       display: flex;
       align-content: center;
-      font-size: 2rem;  
+      font-size: 3.5rem;  
   }
   @media(min-width: 1000px) {
       h1{
-          font-size: 3.5rem;
+          font-size: 5rem;
       }
   }
 
@@ -110,8 +111,26 @@ table {
   }
   nav a:hover{
       font-weight: bold;
-      background: white;
+      color: white;
+      background: gray;
   }
+
+  .hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
+}
   @media(min-width: 1000px) {
       nav a {
         font-size: 1rem;  
@@ -121,9 +140,15 @@ table {
   p {
     margin: 20px 20px;
     line-height: 1.25;
-    font-family: 'Basic';
-    
+    font-size: 1rem;
+    font-family: 'Helvetica';
   }
+  @media(min-width: 1000px) {
+      p {
+          font-size:1.5rem;
+      }
+  }
+  
   
   img {
     display: flex;
@@ -143,8 +168,9 @@ table {
   .topics{
     display: flex;
     justify-content:center;
+    margin-top: 50px;
     padding: 25px;
-    border: 1px solid black
+    border: 1px solid lightgray;
   }
 
  
@@ -153,12 +179,21 @@ table {
     flex-direction: column;
     justify-content: space-between;
     margin: 20px 30px;
-    border-bottom: 1px dashed black
+    border-bottom: 1px dashed gray;
 }
 .subject:hover {
-    background:lightgray;
+    background: #F1F2F3;
     cursor: pointer;
 }
+.subject p {
+    font-size: .85rem;
+}
+@media(min-width: 1000px) {
+    .subject p {
+        font-size: 1.2rem;
+    }
+}
+
 
 .subjectBar {
     display:flex;
@@ -177,13 +212,10 @@ table {
       align-items: center;
       width: 100%;
       padding: 20px 15px;
-      background: lightgray; 
-      border-bottom: 1px dashed black
+      background: #F1F2F3; 
+      border-bottom: 1px dashed gray;
   }
-  .topics{
-      margin-top: 50px;
-     
-  }
+
   footer {
       display: flex;
       justify-content: center;
