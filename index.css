@@ -81,11 +81,11 @@ table {
   h1 {
       display: flex;
       align-content: center;
-      font-size: 2rem;  
+      font-size: 3.5rem;  
   }
   @media(min-width: 1000px) {
       h1{
-          font-size: 3.5rem;
+          font-size: 5rem;
       }
   }
 
@@ -156,7 +156,7 @@ table {
     border-bottom: 1px dashed black
 }
 .subject:hover {
-    background:lightgray;
+    background: #F1F2F3;
     cursor: pointer;
 }
 
@@ -177,7 +177,7 @@ table {
       align-items: center;
       width: 100%;
       padding: 20px 15px;
-      background: lightgray; 
+      background: #F1F2F3; 
       border-bottom: 1px dashed black
   }
   .topics{
