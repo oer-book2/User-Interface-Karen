@@ -153,11 +153,12 @@ body {
     }
 }
 
-header {
+header  {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    font-family: "Aclonica";
     width: 100%;
     padding: 20px 15px;
     background: #F1F2F3;
@@ -170,13 +171,30 @@ header {
         flex-direction: row;
     }
 }
+.about-text h2 {
+    display: flex;
+    justify-content: center;
+    font-family: "Aclonica";
+}
+.about-text h3 {
+    display: flex; 
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
 
 
 h1,
 h2,
-h3 {
-    font-family: 'Aclonica';
-
+h3,
+h4
+ {
+     font-family: 'Aclonica'; 
+}
+li {
+    font-family: 'Helvetica';
+    font-size: 1.2rem;
+    border-bottom: 1px dashed gray;
 }
 
 h1 {
@@ -245,9 +263,17 @@ nav a:hover {
         font-size: 1rem;
     }
 }
+.intro{
+    margin: 15px 25px;  
+}
+@media(min-width: 1000px){
+    .intro{
+    margin: 25px 75px;
+}
+}
 
 p {
-    margin: 20px 20px;
+    margin: 20px 50px;
     line-height: 1.25;
     font-size: 1rem;
     font-family: 'Helvetica';
