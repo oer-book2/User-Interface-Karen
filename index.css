@@ -189,7 +189,7 @@ h2,
 h3,
 h4
  {
-    font-family: 'Aclonica';
+     font-family: 'Aclonica'; 
 }
 li {
     font-family: 'Helvetica';
@@ -263,9 +263,17 @@ nav a:hover {
         font-size: 1rem;
     }
 }
+.intro{
+    margin: 15px 25px;  
+}
+@media(min-width: 1000px){
+    .intro{
+    margin: 25px 75px;
+}
+}
 
 p {
-    margin: 20px 20px;
+    margin: 20px 50px;
     line-height: 1.25;
     font-size: 1rem;
     font-family: 'Helvetica';
